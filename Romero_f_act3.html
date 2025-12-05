@@ -3,72 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crisostomo Ibarra - Resume</title>
+    <title>Kirk Tyler Romero - Resume</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="card">
         <img src="IMG_20250223_190407.jpg" alt="Kirk Tyler Romero Portrait">
-        <h1>Kirk Tyler Romero - Resume</h1>
+        <h1>Kirk Tyler Romero</h1>
 
+        
         <h2>Contact Information</h2>
-        <p>Email: <a href="20255173@s.ubaguio.edu">Kirk Tyler Romero@email.com</a></p>
-        <p>Phone: <a href="tel:+639485840833">+63 912 345 6789</a></p>
-        <p>Location: Baguio city, Benguet, Philippines</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/Kirk Tyler Romero" target="_blank">linkedin.com/in/KirkTylerRomero</a></p>
-        <p>GitHub: <a href="https://github.com/settings/profile" target="_blank">github.com/kiromero</a></p>
+        <p>Email: <a href="mailto:20255173@s.ubaguio.edu">20255173@s.ubaguio.edu</a></p>
+        <p>Phone: <a href="tel:+639485840833">+63 948 584 0833</a></p>
+        <p>Location: Baguio City, Benguet, Philippines</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/KirkTylerRomero" target="_blank">linkedin.com/in/KirkTylerRomero</a></p>
+        <p>GitHub: <a href="https://github.com/kiromero" target="_blank">github.com/kiromero</a></p>
 
         <h2>Professional Summary</h2>
         <p>I graduated from senior high school in the STEM strand and am now a BS Computer Science freshman at the University of Baguio.
-            I’m interested in using technology to help improve communities and solve everyday problems. I’m curious, hardworking, and always ready to learn new things.
-            I have big ideas and a strong drive to make them happen, even if I sometimes get too excited about doing things quickly.</p>
+            I am interested in using technology to help improve communities and solve everyday problems. I’m curious, hardworking, and always ready to learn new things.</p>
 
         <h2>Education</h2>
-        <p>Graduated in grade school in Educare College Inc.</p>
-        <p>Graduated in highschool in Educare College Inc.</p>
-        <p>Graduated in senior highschool in Educare College Inc.</p>
-    
+        <p>Graduated grade school at Educare College Inc.</p>
+        <p>Graduated high school at Educare College Inc.</p>
+        <p>Graduated senior high school at Educare College Inc.</p>
 
         <h2>Work Experience</h2>
-
-        <h3>Flower vendor</h3>
-        <p>Worked at my parents business every summer break</p>
-        
+        <h3>Flower Vendor</h3>
+        <p>Worked at my parents' business every summer break.</p>
 
         <h2>Skills</h2>
-    <ul>
-    <li>Basic Programming (still learning)</li>
-    <li>Problem Solving</li>
-    <li>Teamwork</li>
-    <li>Time Management</li>
-    <li>Basic Computer Troubleshooting</li>
-    <li>Research Skills</li>
-    <li>Adaptability</li>
-    <li>Communication Skills (improving)</li>
-    </ul>
+        <ul>
+            <li>Basic Programming (still learning)</li>
+            <li>Problem Solving</li>
+            <li>Teamwork</li>
+            <li>Time Management</li>
+            <li>Basic Computer Troubleshooting</li>
+            <li>Research Skills</li>
+            <li>Adaptability</li>
+            <li>Communication Skills (improving)</li>
+        </ul>
 
-    <h2>Languages</h2>
-    <ul>
-        <li>Tagalog (Native)</li>
-        <li>English (Fluent)</li>
-    </ul>
+        <h2>Languages</h2>
+        <ul>
+            <li>Tagalog (Native)</li>
+            <li>English (Fluent)</li>
+        </ul>
 
-    <h2>Projects</h2>
-    
-    <h3>HTML CODES</h3>
-    <p>Made some html codes at the classroom </p>
-    
-    <h3>JAVA PROGRAMS</h3>
-    <p>Made some java codes at the classroom</p>
+        <h2>Projects</h2>
+        <h3>HTML Codes</h3>
+        <p>Created multiple HTML projects in class.</p>
 
-    <h3>BASIC FIGMA WEBSITE</h3>
-    <p>Made some figma website at the classroom</p>
+        <h3>Java Programs</h3>
+        <p>Developed Java code and logic exercises in class.</p>
 
+        <h3>Basic Figma Website</h3>
+        <p>Designed a simple website layout using Figma.</p>
 
-    
-    <h2>References</h2>
-    <p>Available upon request </p>
-    <p>Available for employment.</p>
+        <h2>My Portfolio</h2>
+
+        <button class="tab-btn" onclick="showSection('certificates')">Certificates</button>
+        <button class="tab-btn" onclick="showSection('htmlprojects')">HTML Projects</button>
+
+        
+
+        <div id="htmlprojects" class="tab-section">
+            <h3>HTML Projects</h3>
+            <img src="pancake.jpeg" alt="HTML Project" style="width:100%; border-radius:10px;">
+        </div>
+
+        <div id="certificates" class="tab-section">
+            <h3>My Certificates</h3>
+            <img src="cert.jpeg" alt="Certificate" style="width:100%; border-radius:10px;">
+        </div>
+
+        <h2>References</h2>
+        <p>Available upon request.</p>
+        <p>Available for employment.</p>
+    </div>
+
+    <script>
+    function showSection(sectionId) {
+        document.querySelectorAll('.tab-section').forEach(function(section) {
+            section.style.display = 'none';
+        });
+
+        document.getElementById(sectionId).style.display = 'block';
+    }
+    </script>
+
 </body>
 </html>
-

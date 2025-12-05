@@ -77,3 +77,60 @@ ul li:hover {
     transform: scale(1.1);
 }
 
+.portfolio-btn {
+    display: block;
+    width: 200px;
+    margin: 30px auto;
+    padding: 12px 20px;
+    text-align: center;
+    background-color: #d27b3f;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+    border: 3px solid #a0522d;
+}
+
+.portfolio-btn:hover {
+    background-color: chocolate;
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.tab-btn {
+    background-color: #d27b3f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.tab-btn:hover {
+    background-color: chocolate;
+    transform: scale(1.1);
+}
+
+/* Portfolio / Tab Images */
+.tab-section img {
+    width: 100%;       /* Full width of the section */
+    max-width: 700px;  /* Optional max width for large screens */
+    height: 400px;     /* Fixed height to make it square-ish */
+    object-fit: cover; /* Ensures the image fills the box without distortion */
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+    border: 3px solid #d27b3f;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tab-section img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
